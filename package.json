@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.server.js",
+    "deploy": "gh-pages -d build && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
