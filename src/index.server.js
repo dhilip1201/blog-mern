@@ -31,7 +31,11 @@ app.use('/api', initalDataRoutes);
 app.use('/api', commentRoutes);
 
 
-
+app.get('/',(req,res)=>{
+    res.status(200).json({
+        message:'Welcome our Site'
+    })
+})
 
 app.listen(process.env.PORT,()=>{
     console.log(`Running Our Port is ${process.env.PORT}`)
